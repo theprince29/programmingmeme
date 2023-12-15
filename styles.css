@@ -1,0 +1,97 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  background-color: antiquewhite;
+}
+
+.heading-bar {
+  padding: 15px 20px; /* Adjust the padding */
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.memes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .meme {
+    margin: 20px;
+    /* align-items: ; */
+
+    align-items: center;
+    object-fit: fill;
+    transition: transform 0.3s ease;
+   
+  }
+  .meme:hover {
+    transform: scale(1.1); /* Apply a 360-degree spin on hover */
+  }
+
+  .load-more {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .load-more:hover {
+    background-color: #2980b9;
+  }
+
+  img{
+    border: 3px solid white;/*  #ffa500;*/
+    border-radius: 10px;
+    height: inherit;
+    background-color: rgba(255, 255, 255, 0.15); /* Adjust the background color and opacity */
+    backdrop-filter: blur(10px); /* Adding blur effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    
+  }
+
+  .memes-container .meme {
+    opacity: 0; /* Initially hide the cards */
+    animation: fadeInAnimation 1s ease forwards; /* Animation */
+  }
+  
+  /* Keyframes for fading in each card */
+  @keyframes fadeInAnimation {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Add animation delay to each card */
+  .memes-container .meme:nth-child(1) {
+    animation-delay: 1s; /* Adjust delay for each card */
+  }
+  
+  .memes-container .meme:nth-child(2) {
+    animation-delay: 2s; /* Adjust delay for each card */
+  }
+
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color:  #7843E6;
+    color: white;
+    
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: underline;
+  }
