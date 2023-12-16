@@ -2,7 +2,7 @@ const url = 'https://programming-memes-images.p.rapidapi.com/v1/memes';
 const options = {
   method: 'GET',
   headers: {
-    'X-RapidAPI-Key': 'e2212e1048msh6e853352072c8bbp1265eejsn6534561cd06d',
+    'X-RapidAPI-Key': '817f22dca9mshf83e13b922ca667p1e35aajsnac71c2d28bd1',
     'X-RapidAPI-Host': 'programming-memes-images.p.rapidapi.com'
   }
 };
