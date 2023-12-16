@@ -11,7 +11,7 @@ const memesContainer = document.querySelector('.memes-container');
 const loadMoreButton = document.querySelector('.load-more');
 
 let offset = 0;
-const limit = 12;
+const limit = 1000;
 
 async function fetchMemes() {
   try {
